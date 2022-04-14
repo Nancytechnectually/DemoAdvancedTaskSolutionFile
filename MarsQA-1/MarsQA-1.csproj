@@ -165,30 +165,25 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Step Definition\Feature2SkillsStepDefinitions.cs" />
-    <Compile Include="Step Definition\Feature2LanguageStepDefinitions.cs" />
-    <Compile Include="Step Definition\Feature1DescriptionStepDefinitions.cs" />
     <Compile Include="SpecflowPages\Helpers\CommonMethods.cs" />
     <Compile Include="SpecflowPages\Helpers\ConstantHelpers.cs" />
     <Compile Include="SpecflowPages\Helpers\Driver.cs" />
     <Compile Include="SpecflowPages\Helpers\ExcelLibHelper.cs" />
     <Compile Include="SpecflowPages\Helpers\wait.cs" />
-    <Compile Include="SpecflowPages\Pages\ProfilePage.cs" />
     <Compile Include="SpecflowPages\Pages\SignIn.cs" />
     <Compile Include="SpecflowPages\Utils\Start.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Feature\Feature1Description.feature" />
-    <None Include="Feature\Feature2Language.feature" />
-    <None Include="Feature\Feature2Skills.feature" />
     <None Include="SpecflowTests\Data\Data.xlsx" />
     <None Include="packages.config" />
     <None Include="SpecflowTests\Data\Mars.xlsx" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Feature\" />
     <Folder Include="SpecflowTests\Bind_Steps\" />
+    <Folder Include="Step Definition\" />
     <Folder Include="TestReports\Screenshots\" />
     <Folder Include="TestReports\Test_files\" />
   </ItemGroup>
