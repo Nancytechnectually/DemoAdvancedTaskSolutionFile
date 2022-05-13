@@ -117,24 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AUTOITFilePath" xml:space="preserve">
+    <value>C:\Users\Nancy\Desktop\new start\marsframework\MarsFramework\SampleFileUpload\</value>
+  </data>
   <data name="Browser" xml:space="preserve">
     <value>2</value>
     <comment>1 for firefox and 2 for Chrome</comment>
   </data>
   <data name="ExcelPath" xml:space="preserve">
-    <value>your path</value>
+    <value>C:\Users\Nancy\Desktop\new start\marsframework\MarsFramework\ExcelData\TestDataShareSkill.xlsx</value>
   </data>
   <data name="IsLogin" xml:space="preserve">
     <value>true</value>
     <comment>If true Login, else Register</comment>
   </data>
   <data name="ReportPath" xml:space="preserve">
-    <value>your path</value>
+    <value>C:\Users\Nancy\Desktop\reports\</value>
   </data>
   <data name="ReportXMLPath" xml:space="preserve">
-    <value>your path</value>
+    <value>C:\Users\Nancy\Desktop\reports\ </value>
   </data>
   <data name="ScreenShotPath" xml:space="preserve">
-    <value>your path</value>
+    <value>C:\Users\Nancy\Desktop\reports\</value>
   </data>
 </root>

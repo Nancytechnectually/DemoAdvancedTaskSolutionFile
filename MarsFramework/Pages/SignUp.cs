@@ -45,7 +45,7 @@ namespace MarsFramework.Pages
         private IWebElement JoinBtn { get; set; }
         #endregion
 
-        internal void register()
+        public void register()
         {
             //Populate the excel data
             GlobalDefinitions.ExcelLib.PopulateInCollection(Base.ExcelPath, "SignUp");
