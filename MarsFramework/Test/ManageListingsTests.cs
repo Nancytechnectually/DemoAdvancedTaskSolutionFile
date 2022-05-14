@@ -180,14 +180,20 @@ namespace MarsFramework
 
 
                
+                
+              
+
+                // Refresh Manage Listings page
+
+                GlobalDefinitions.driver.Navigate().Refresh();
+
+
+                GlobalDefinitions.WaitForElement(GlobalDefinitions.driver, By.XPath("//tbody/tr/td[3]"), 10);
+                
                 // check if listing has been deleted
 
                 bool x = false;
-              
-                GlobalDefinitions.WaitForElement(GlobalDefinitions.driver, By.XPath("//tbody/tr/td[3]"), 10);
-                
-              //  Thread.Sleep(3000);
-                
+
 
                 ManageListings.ListingsList();
                 String[] List = ManageListings.getLinkText();

@@ -382,10 +382,8 @@ namespace MarsFramework.Pages
 
         public void dropdown()
         {
-            // Select Category dropdown
+            // Slect Excel sheet for values
 
-
-            CategoryDropDown.Click();
             GlobalDefinitions.ExcelLib.PopulateInCollection(Base.ExcelPath, "ShareSkill");
 
             //Value1 = "Programming & Tech";
@@ -395,20 +393,30 @@ namespace MarsFramework.Pages
             Value2 = GlobalDefinitions.ExcelLib.ReadData(2, "SubCategory");
 
 
-            //select Category by value
-            GlobalDefinitions.WaitForElement(GlobalDefinitions.driver, By.XPath("//*[text()='" + Value1 + "']"), 10);
-            GlobalDefinitions.driver.FindElement(By.XPath("//*[text()='" + Value1 + "']")).Click();
+            // Initialize selectelement DDC for category dropdown 
+
+
+            SelectElement DDC = new SelectElement(CategoryDropDown);
+            
+            //select Category by text
+
+            DDC.SelectByText(Value1);
+
+            // Initialize selectelement DDSC for sub-category dropdown 
+
+
+            SelectElement DDSC = new SelectElement(SubCategoryDropDown);
+          
+            //select sub-Category by text
+
+            DDSC.SelectByText(Value2);
 
 
             // Select SubCategory dropdown
 
-            SubCategoryDropDown.Click();
+            
 
-
-            //select Category by value
-            GlobalDefinitions.WaitForElement(GlobalDefinitions.driver, By.XPath("//*[text()='" + Value2 + "']"), 10);
-            GlobalDefinitions.driver.FindElement(By.XPath("//*[text()='" + Value2 + "']")).Click();
-
+           
         }
 
         public String Value1;

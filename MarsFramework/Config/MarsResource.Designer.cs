@@ -97,7 +97,7 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\Nancy\Desktop\reports\.
+        ///   Looks up a localized string similar to C:\Users\Nancy\Desktop\new start\marsframework\MarsFramework\TestReports\ExtentReports 2.0_files\.
         /// </summary>
         internal static string ReportPath {
             get {
@@ -106,7 +106,7 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\Nancy\Desktop\reports\ .
+        ///   Looks up a localized string similar to C:\Users\Nancy\Desktop\new start\marsframework\MarsFramework\TestReports\.
         /// </summary>
         internal static string ReportXMLPath {
             get {
@@ -115,7 +115,7 @@ namespace MarsFramework.Config {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to C:\Users\Nancy\Desktop\reports\.
+        ///   Looks up a localized string similar to C:\Users\Nancy\Desktop\new start\marsframework\MarsFramework\\TestReports\Screenshots.
         /// </summary>
         internal static string ScreenShotPath {
             get {
