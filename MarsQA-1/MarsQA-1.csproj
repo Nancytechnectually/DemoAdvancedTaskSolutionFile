@@ -168,7 +168,6 @@
     <Compile Include="SpecflowPages\Pages\HomePage.cs" />
     <Compile Include="SpecflowPages\Pages\ManageListings.cs" />
     <Compile Include="SpecflowPages\Pages\SkillShare.cs" />
-    <Compile Include="Step Definition\SkillShareStepDefinitions.cs" />
     <Compile Include="SpecflowPages\Helpers\CommonMethods.cs" />
     <Compile Include="SpecflowPages\Helpers\ConstantHelpers.cs" />
     <Compile Include="SpecflowPages\Helpers\Driver.cs" />
@@ -180,14 +179,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Feature\SkillShare.feature" />
     <None Include="SpecflowTests\Data\Data.xlsx" />
     <None Include="packages.config" />
     <None Include="SpecflowTests\Data\Mars.xlsx" />
     <None Include="SpecflowTests\Data\TestData.xlsx" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Feature\" />
     <Folder Include="SpecflowTests\Bind_Steps\" />
+    <Folder Include="Step Definition\" />
     <Folder Include="TestReports\Screenshots\" />
     <Folder Include="TestReports\Test_files\" />
   </ItemGroup>

@@ -21,6 +21,9 @@ namespace MarsQA_1.Helpers
         //ReportXML Path
         public static string ReportXMLPath = @"C:\Users\Nancy\Desktop\New folder\MarsQA-1\TestReports\Screenshots\1" + DateTime.Now.ToString("_dd-mm-yyyy_mss") + ".xml";
 
+        // ExcelSheet Path
+
+        public static string ExcelPath = @"C:\Users\Nancy\Desktop\New folder\MarsQA-1\SpecflowTests\Data\Mars.xlsx";
 
     }
 }

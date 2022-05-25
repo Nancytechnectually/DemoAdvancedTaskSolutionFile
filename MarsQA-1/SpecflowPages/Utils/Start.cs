@@ -34,7 +34,7 @@ namespace MarsQA_1.Utils
             //launch the browser
             
             Initialize();
-            ExcelLibHelper.PopulateInCollection(@"C:\Users\Nancy\Desktop\New folder\MarsQA-1\SpecflowTests\Data\Mars.xlsx", "Credentials");
+            ExcelLibHelper.PopulateInCollection(ConstantHelpers.ExcelPath , "Credentials");
             
 
             
