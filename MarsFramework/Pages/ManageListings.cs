@@ -7,7 +7,7 @@ using OpenQA.Selenium.Support.PageObjects;
 
 namespace MarsFramework.Pages
 {
-     public class ManageListings
+    public class ManageListings
     {
         public ManageListings()
         {
@@ -26,6 +26,8 @@ namespace MarsFramework.Pages
         [FindsBy(How = How.XPath, Using = "//tr[1]/td[8]/div/button[3]")]
         private IWebElement delete { get; set; }
 
+
+        private static string  Row = "1";
         //Edit the listing
         [FindsBy(How = How.XPath, Using = "//tr[1]/td[8]/div/button[2]")]
         private IWebElement edit { get; set; }
@@ -38,10 +40,16 @@ namespace MarsFramework.Pages
         [FindsBy(How = How.XPath, Using = "//tbody/tr[1]/td[3]")]
         private IWebElement ListingTitle { get; set; }
 
+        // Table Header
+        [FindsBy(How = How.XPath, Using = "//table/thead/tr")]
+        private IWebElement TableHeader { get; set; }
 
+        public bool ManageListingsPage ()
+        {
+           bool PageExists =  TableHeader.Displayed;
+            return PageExists;
+        }
 
-
-        
         public void clickOnManageListings()
 
         {
@@ -54,6 +62,18 @@ namespace MarsFramework.Pages
 
 
         }
+
+       
+        private String Xpath (int k)
+        {
+        
+            string path = $"//tr[{k}]/td[8]/div/button[2]" ;
+            return path;
+
+        }
+
+
+       
 
         // click on view listing icon
         public void ClickOnViewListingIcon()

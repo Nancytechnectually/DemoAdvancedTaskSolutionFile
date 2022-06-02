@@ -160,9 +160,22 @@ namespace MarsFramework
         [FindsBy(How = How.XPath, Using = "//*[@id='account-profileEdit-section']/div/section[2]/div/div/div/form/div[8]/div/div[4]/span/button[1]")]
         private IWebElement Save { get; set; }
 
-        #endregion
+        //Click on Sign Out Button
+        [FindsBy(How = How.XPath, Using = "//div[1]/div[2]/div/a[2]/button")]
+        private IWebElement SignOut { get; set; }
 
-        internal void EditProfile()
+
+        
+            public bool LoginSuccessful()
+            {
+                return SignOut.Displayed && SignOut.Enabled;
+            }
+
+
+
+            #endregion
+
+            internal void EditProfile()
         {
 
         }
